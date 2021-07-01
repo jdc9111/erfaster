@@ -1,0 +1,435 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <img class="banner" src="images/ER faster.png" />
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <a href="forms/cgmh_outpatient_referrral_form.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="images/outpatientReferralForm.png"
+                alt="outpatient referral form"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">CGMH Emergency Department</p>
+            <p class="subtitle is-6">
+              Generic fillable referrlal form for outpatient follow-up.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/CGMHphoneReferralForm.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="images/Phone Referral Form.png"
+                alt="Phone referral form"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div>
+                <p class="title is-4">Incoming Phone Referral</p>
+                <p class="subtitle is-6">
+                  Fillable form for incoming Emergency Department referrals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/cgmh_ultrasound.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="images/ultrasoundRequisition.svg"
+                alt="ultrasound requisition"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">CGMH Radiology</p>
+            <p class="subtitle is-6">
+              Fillable Requisition for Outpatient or "Next Day" Ultrasound.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" id="ohip">
+        
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/ohip_card.jpg" alt="ohip card" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">OHIP Billing</p>
+            <p class="subtitle is-6">References, Tools, Resources.</p>
+          </div>
+        
+      </div>
+
+      <!-- OHIP Billing Modal -->
+
+      <div class="modal" id="ohip-modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">OHIP Billing</p>
+            <button class="delete" id="ohip-delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <ul>
+              <a href="pdfs/billing_codes.pdf" target="_blank">OHIP Billing Codes</a><br>
+              <a href="pdfs/diagnostic_codes.pdf" target="_blank">OHIP Diagnostic Codes</a><br><br>
+              <a href="https://drive.google.com/file/d/0B3wxISVVPDKAd0t3cXJWbzhNUGpmMlBBNk4zYm56Qlh2NVVR/view?usp=sharing">Billing Codes Spreadsheet</a><br>
+              <a href="pdfs/GEMA_billing.pdf">GEMA Billing Reference</a></br>
+              <a href="https://emlondon.ca/emergency-ohip-fee-codes">EM London OHIP Billing Reference</a><br>
+              <a href="https://londonreferral.files.wordpress.com/2018/03/billing-sheet.pdf">London EM Billing Sheet</a><br><br>
+              <a href="https://www.dr-bill.ca/ohip_billing_codes/"><img id="bill" src="images/dr-bill-logo-white.png"></a>
+            </ul>
+          </section>
+          <footer class="modal-card-foot">
+          </footer>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <a href="http://erfaster.ca/pdfs/diagnostic_codes.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="images/ohipDiagnosticCodes.svg"
+                alt="Ohip diagnostic Codes"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">OHIP Diagnostic Codes</p>
+            <p class="subtitle is-6">Here they are. FWIW.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/CT_requisition_2021.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/ctRequisition.svg" alt="CT requisition" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">CGMH Radiology</p>
+            <p class="subtitle is-6">NEW Fillable Outpatient CT requisition.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/cmgh_cardio-resp.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/cardioResp.svg" alt="CardioRespiratory Requisition" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">CGMH Cardiac & Resp. Testing</p>
+            <p class="subtitle is-6">
+              Holter, ECG, Echo, Exercise Stress Test, BP monitoring.<br />Sprirometry,
+              PTFs, Home o@ assessment, Asthma clinic.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/cgmhForm1.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/form1.png" alt="Form 1" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Form 1</p>
+            <p class="subtitle is-6">
+              Pre-populated with address, date and some other magic.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/Collingwood Cardiology.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="images/collingwoodCardiology.png"
+                alt="Placeholder image"
+              />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Collingwood Cardiology</p>
+            <p class="subtitle is-6">
+              Referral form for consult, echo, stress ECG, Holter, BP monitor.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="https://www.rvh.on.ca/wp-content/uploads/2021/03/Stroke-Prevention-Clinic-Referral-Form.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/FAST.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Stroke Prevention Clinic</p>
+            <p class="subtitle is-6">
+              Outpatient Stroke Prevention Clinic at Royal Victoria Hospital.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/Collingwood Wound Care.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/woundClinic.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Wound Clinic</p>
+            <p class="subtitle is-6">
+              Outpatient referral for CGMH Wound Clinic.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/peaktoshore.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/peakToShore.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Peak-to-Shore Sports Medicine</p>
+            <p class="subtitle is-6">
+              Referral form for Peak-to-Shore Sports Medicine and acute injury
+              clinic.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="forms/Request-for-MRI-Consultation.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/rvhMRI.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">RVH MRI</p>
+            <p class="subtitle is-6">
+              Requisition for MRI at RVH, pre-populated with CGMH info.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" id="raam">
+        
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/raamClinic.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">RAAM Clinic & RVH Residential Detox</p>
+            <p class="subtitle is-6">
+              Referral form and patient brochures for RAAM clinic and
+              residential detox in Barrie.
+            </p>
+          </div>
+        
+      </div>
+
+      <!-- RAAM Billing Modal -->
+
+      <div class="modal" id="raamModal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">OHIP Billing</p>
+          <button class="delete" id="raam-delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <ul>
+            <li><a href="https://www.rvh.on.ca/wp-content/uploads/2021/04/RAAM-Referral.pdf">RAAM Clinic Referral Form</a></li>
+            <br>
+            <li><a href="https://www.rvh.on.ca/wp-content/uploads/2021/05/detoxbrochure-v2.pdf">Residential Detox Brochure</a></li>
+            <li><a href="https://www.rvh.on.ca/wp-content/uploads/2021/05/RAAM-Brochure-V2.0.pdf">RAAM Clinic Brochure</a></li>
+          </ul>
+        </section>
+        <footer class="modal-card-foot">
+        </footer>
+      </div>
+    </div>
+
+      <div class="card">
+        <a href="forms/Cooper & Ducas New Referral Form.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/vascularSurgery.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Vascular Surgery Referral</p>
+            <p class="subtitle is-6">
+              Dr. Cooper and Dr. Ducas Vascular Surgery in Barrie.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="card">
+        <a href="https://www.handouts.ca">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/handoutsLogo.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Handouts.ca</p>
+            <p class="subtitle is-6">
+              Patient information handouts from trusted sources in PDF format.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="https://www.notion.so/ER-Things-5f8652ef2a5a4c5cb5127b9bc49897bd">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/erThings.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">ER Things</p>
+            <p class="subtitle is-6">
+              Antibiogram.  Radiology protocols. Blood order sets.  Blood culture followup protocol.  Etc.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="https://www.notion.so/CGMH-Orthopedics-Rotation-References-0a2d9278ae6a4ac7859f33e636526309">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/orthoRotation.png" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">CGMH Emergency Orthopedics Rotation</p>
+            <p class="subtitle is-6">
+              References, readings, videos.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="pdfs/DragonMedicalOne_SRS_UserGuide.pdf">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/DMOguide.png" alt="Dragon Medical One" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Dragon Medical One User's Guide</p>
+            <p class="subtitle is-6">
+              How to use Dragon Medical One. Your new best friend. The "unofficial guide" by physicians for physicians.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    
+    
+
+    </div>
+
+    <hr />
+
+    <div class="footer">
+        <div class="py-3">
+            <h3 class="is-size-3">About Us</h3>
+            <div>
+                <p class="py-5">
+                We build online tools for Emergency Departments that improve patient
+                care, reduce risk and increase efficiency. Custom pre-populated fillable PDF forms, websites, etc. Built by people who
+                work in Emergency Departments. <br> Let us know how we can help your department. 
+                </p>
+                <a href="mailto:info@erfaster.ca">
+                <button class="button">
+                    <span class="icon">
+                    <span
+                        class="iconify"
+                        data-icon="ant-design:mail-outlined"
+                        data-inline="false"
+                    ></span>
+                    </span>
+                    <span>info@erfaster.ca</span>
+                </button>
+                </a>
+
+                <a href="https://twitter.com/erfaster">
+                <button class="button">
+                    <span class="icon">
+                    <span
+                        class="iconify"
+                        data-icon="logos:twitter"
+                        data-inline="false"
+                    ></span>
+                    </span>
+                    <span>@erfaster</span>
+                </button>
+                </a>
+            </div>
+        <div>
+  </body>
+
+  <script src="script.js"></script>
+  <script src="raamModal.js"></script>
+</html>

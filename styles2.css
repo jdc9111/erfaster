@@ -1,0 +1,56 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  width: 75%;
+  padding-top: 30px;
+}
+.small-logo {
+  width: 30px;
+  color: blue;
+}
+.footer {
+  background-color: lightgrey;
+  color: black;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 100px;
+}
+
+.modal-card {
+  padding-top: 15%;
+}
+
+#bill {
+  width: 150px;
+}
+
+#ohip {
+  cursor: pointer;
+}

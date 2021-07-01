@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167835951-1"></script>
+
+     <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-167835951-1');
+     </script>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>ER Faster</title>
+  </head>
+  <body>
+    <div class="container ml-5 mr-5 mt-5 mb-5">
+      <div class="pb-5 jumbotron">
+        <img class="banner" src="images/ER faster.png">
+      </div>
+
+  
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <a href="forms/cgmh_outpatient_referrral_form.pdf">
+              <img
+                src="images/outpatientReferralForm.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">CGMH Emergency Department</h5>
+                 <p>Generic fillable referral form for outpatient follow up.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="forms/phone_referrral_form.pdf">
+              <img
+                src="images/Phone Referral Form.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="cart-title">CGMH Emergency Department</h5>
+                  <p>Fillable form for incoming Emergency Department referrals from the community.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="forms/cgmh_ultrasound.pdf">
+                <img
+                  src="images/ultrasoundRequisition.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CGMH Radiology</h5>
+                    <p>Fillable Requisition for Outpatient or "Next Day" Ultrasound.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#ohipBillingModal">
+                <img
+                  src="images/ohip_card.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                
+                <div class="card-body">
+                  <h5 class="card-title">OHIP Billing</h5>
+                    <p>References, resources and tools.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="pdfs/diagnostic_codes.pdf">
+                <img src="images/ohipDiagnosticCodes.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">OHIP Diagnostic Codes</h5>
+                    <p>Here they are. FWIW.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="forms/CT_requisition_2021.pdf">
+                <img src="images/ctRequisition.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CGMH Radiology</h5>
+                    <p>NEW fillable Outpatient CT requisition form</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="forms/cmgh_cardio-resp.pdf">
+                <img src="images/CardioResp.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CGMH Cardiac  & Resp Testing</h5>
+                    <p>Holter, ECG, Echo, Exercise Stress Test, BP monitoring.</p>
+                    <p>Spirometry, PFTs, Home O2 assessment, Asthma Clinic.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="forms/cgmhForm1.pdf">
+              <img
+                src="images/form1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Form 1</h5>
+                <p class="card-text">
+                  Pre-populated with address, date, time and some other magic.
+                </p>
+              </div></a>
+            </div>
+          </div>
+
+        
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="forms/Collingwood Cardiology.pdf">
+                <img
+                  src="images/collingwoodCardiology.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Collingwood Caridology</h5>
+                    <p>Referral form for consult, 2D echo, Stress ECG, Stress echo, Holter monitor, BP monitor</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="https://www.rvh.on.ca/wp-content/uploads/2021/03/Stroke-Prevention-Clinic-Referral-Form.pdf">
+                <img
+                  src="images/fast-signs-of-stroke-en.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Stroke Prevention Clinic</h5>
+                    <p>Outpatient Stroke Prevention Clincic at Royal Victoria Hospital.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="pdfs/Collingwood Wound Care.pdf">
+                <img
+                  src="images/woundClinic.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CGMH Wound Clinic</h5>
+                    <p>Outpatient referral form for Wound Clinic.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="forms/peaktoshore.pdf">
+                <img
+                  src="images/peakToShore.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Peak-to-Shore Sports Medicine</h5>
+                    <p>Outpatient referral form for Sports medicine and acute injuries.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+       
+
+          <div class="col">
+            <div class="card h-100">
+              <a href="pdfs/Request-for-MRI-Consultation.pdf">
+                <img
+                  src="images/rvhMRI.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RVH MRI Requisition</h5>
+                    <p>Fillable and partially completed requisition for outpatient MRI at RVH.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#raamModal">
+           
+              <img src="images/raamClinic.png" class="card-img-top">
+              
+              
+              <div class="card-body">
+                <h5 class="card-title">RAAM Clinic & Barrie Residential Detox</h5>
+                <p class="card-text">
+                Referral form and patient brochures.
+              </p>
+            </div></a>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://handouts.ca">
+            <img
+              src="images/handoutsLogo.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Handouts.ca </h5>
+              <p class="card-text">Handouts in PDF format for patients, from trusted sources.  A work in progress.
+                
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://www.notion.so/CGMH-References-5f8652ef2a5a4c5cb5127b9bc49897bd">
+            <img
+              src="images/erThings.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">ER Stuff</h5>
+              <p class="card-text">
+                Antibiogram.  Radiology protocols. Blood culture algorithm. Handy stuff. Etc.
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <a href="https://www.notion.so/CGMH-Orthopedics-Rotation-References-0a2d9278ae6a4ac7859f33e636526309">
+            <img
+              src="images/orthoRotation.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Orthopedics Rotation References</h5>
+              <p class="card-text">
+                Reading materials and references to support CGMH Orthopedics rotation.
+              </p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <br>
+    <br>
+    
+    
+  
+
+
+
+    <hr/>
+
+    <div class="bg-light">
+      <h3 class="mx-2 pt-3">About Us</h3>
+        <div class="mx-3">
+          <p><small class="text-secondary">We build online tools for Emergency Departments that improve patient care, reduce risk and increase efficiency. <br>Built by people who work in Emergency Departments.</small></p>
+          <p><img src="images\email_black_24dp.svg"> info@erfaster.ca</p>
+          <p class="pb-4"><a href="https://twitter.com/erfaster"><img class="small-logo" src="images\Logo black.svg">erfaster</p></a>
+        </div>
+    </div>
+
+
+    
+
+
+
+    
+
+
+    <!-- CGMH Modal 
+  <div class="modal fade" id="staticBackdrop" tabindex="-1" role="dialog" aria-labelledby="cgmhModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cgmhModalLabel">CGMH Reference</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <a href="forms\Phone Referral Form.pdf">ED Phone Referral<br>
+            <a href="forms\Outpatient Referral Form.pdf">Generic Referral form</a><br>
+            <a href="references\CGMH protected code blue.pdf">Protected Code Blue</a><br>
+            <a href="references\cgmhordersets.pdf">CGMH Blood Order Sets</a><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+-->
+
+
+
+<!-- CGMH Radiology Modal Modal -->
+<div class="modal fade" id="cgmhRadiologyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CGMH Radiology</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <br>
+        <div class="card bg-light">
+          <div class="card-body">
+            <a class="font-weight-bold" href="forms/CT_requisition_2021.pdf">CT Scan Requisition</a><br>
+            <a class="font-weight-bold" href="forms/cgmh_ultrasound.pdf">Ultrasound Requisition<br>
+            <br>
+            <a class="font-weight-bold" href="forms/cmgh_cardio-resp.pdf">Holter, Echo, Stress Test<br>Spirometry, PFTs, ABG <br>COPD/Astham Ed</a><br>
+            </div>
+        </div>
+        <br>
+        <a href="pdfs/CT Contrast Adminstration & Risk Assessment for CIN - Standard Operating Procedure_APRIL 2021 copy.pdf">CT Contrast Risk Assessment</a><br>
+        <a href="pdfs/Hydration Protocol Pre and Post CT Contrast_ REVISION FINAL April 2021.pdf">Hydration Protocol Pre/Post Contrast</a><br><br>
+        <a href="https://car.ca/wp-content/uploads/Prevention-of-Contrast-Induced-Nephropathy-2011.pdf">CAR Guidelines for Prevention of CIN</a><br>
+        <br>
+        <a href="pdfs/CONTRAST PREDMEDICATION GUIDELINES_FINAL April 2021.pdf">Contrast Allergy Premedication Guidelines</a><br>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- OHIP Billing Modal -->
+<div class="modal fade" id="ohipBillingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">OHIP Billing</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="card-body">
+            <a href="pdfs/billing_codes.pdf" target="_blank">OHIP Billing Codes</a><br>
+            <a href="pdfs/diagnostic_codes.pdf" target="_blank">OHIP Diagnostic Codes</a><br><br>
+            <a href="https://drive.google.com/file/d/0B3wxISVVPDKAd0t3cXJWbzhNUGpmMlBBNk4zYm56Qlh2NVVR/view?usp=sharing">Billing Codes Spreadsheet</a><br>
+            <a href="pdfs/GEMA_billing.pdf">GEMA Billing Reference</a></br>
+            <a href="https://emlondon.ca/emergency-ohip-fee-codes">EM London OHIP Billing Reference</a><br>
+            <a href="https://londonreferral.files.wordpress.com/2018/03/billing-sheet.pdf">London EM Billing Sheet</a><br><br>
+            <a href="https://www.dr-bill.ca/ohip_billing_codes/"><img id="bill" src="images/dr-bill-logo-white.png"></a>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- RAAM Modal -->
+<div class="modal fade" id="raamModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">RAAM Clinic & Withdrawl Management</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="card-body">
+            <a href="https://www.rvh.on.ca/wp-content/uploads/2021/04/RAAM-Referral.pdf">RAAM Clinic Referral</a><br>
+            <a href="https://www.rvh.on.ca/wp-content/uploads/2021/05/detoxbrochure-v2.pdf">Residential Detox Brochure</a>
+            <a href="https://www.rvh.on.ca/wp-content/uploads/2021/05/RAAM-Brochure-V2.0.pdf">RAAM Clinic Brochure</a><br>
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
