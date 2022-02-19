@@ -79,3 +79,7 @@ hr {
   height: 600px;
   padding: 0.5rem;
 }
+
+.footerprose {
+  max-width: 80ch;
+}

@@ -63,3 +63,9 @@ a:active {
     width: 550px;
   }
 }
+
+.footerprose {
+  max-width: 80ch;
+  margin: auto;
+  
+}
